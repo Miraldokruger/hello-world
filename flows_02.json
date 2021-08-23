@@ -1,0 +1,22 @@
+[
+    {
+        "id": "420669408e74e929",
+        "type": "function",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "func": "var load_1;\n\nload_1 = msg.payload;\nload_1 += \"Lon\";\n\nreturn {payload : load_1};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 260,
+        "wires": [
+            [
+                "cb1229cb7bf2714b",
+                "37fe23e8d662c6a7"
+            ]
+        ]
+    }
+]
