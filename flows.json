@@ -1,588 +1,119 @@
 [
     {
-        "id": "a12aa790e2d52da7",
+        "id": "871241e86895e73b",
         "type": "tab",
-        "label": "Flow 1",
+        "label": "Alertas",
         "disabled": false,
         "info": ""
     },
     {
-        "id": "d67e567cd92cdd5c",
-        "type": "ui_tab",
-        "name": "Rastreador",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "ce5362b6dc1d33fe",
-        "type": "ui_base",
-        "theme": {
-            "name": "theme-light",
-            "lightTheme": {
-                "default": "#0094CE",
-                "baseColor": "#0094CE",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": true,
-                "reset": false
-            },
-            "darkTheme": {
-                "default": "#097479",
-                "baseColor": "#31239f",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": true,
-                "reset": false
-            },
-            "customTheme": {
-                "name": "Untitled Theme 1",
-                "default": "#4B7930",
-                "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "reset": false
-            },
-            "themeState": {
-                "base-color": {
-                    "default": "#0094CE",
-                    "value": "#0094CE",
-                    "edited": true
-                },
-                "page-titlebar-backgroundColor": {
-                    "value": "#0094CE",
-                    "edited": false
-                },
-                "page-backgroundColor": {
-                    "value": "#fafafa",
-                    "edited": false
-                },
-                "page-sidebar-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-textColor": {
-                    "value": "#1bbfff",
-                    "edited": false
-                },
-                "group-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "widget-textColor": {
-                    "value": "#111111",
-                    "edited": false
-                },
-                "widget-backgroundColor": {
-                    "value": "#0094ce",
-                    "edited": false
-                },
-                "widget-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "base-font": {
-                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-                }
-            },
-            "angularTheme": {
-                "primary": "indigo",
-                "accents": "blue",
-                "warn": "red",
-                "background": "grey",
-                "palette": "light"
-            }
-        },
-        "site": {
-            "name": "Node-RED Dashboard",
-            "hideToolbar": "false",
-            "allowSwipe": "false",
-            "lockMenu": "false",
-            "allowTempTheme": "true",
-            "dateFormat": "DD/MM/YYYY",
-            "sizes": {
-                "sx": 48,
-                "sy": 48,
-                "gx": 6,
-                "gy": 6,
-                "cx": 6,
-                "cy": 6,
-                "px": 0,
-                "py": 0
-            }
-        }
-    },
-    {
-        "id": "fa449e43a0d5d011",
-        "type": "ui_group",
-        "name": "Localizacao",
-        "tab": "d67e567cd92cdd5c",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "762347e8a8927422",
-        "type": "ui_group",
-        "name": "Batimentos Cardiacos",
-        "tab": "d67e567cd92cdd5c",
-        "order": 2,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "8dae227527354ab8",
-        "type": "ui_group",
-        "name": "Erros",
-        "tab": "d67e567cd92cdd5c",
-        "order": 3,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "05b68ccbfc90dfde",
+        "id": "9246ec48caf9aafc",
         "type": "inject",
-        "z": "a12aa790e2d52da7",
-        "name": "Data_In",
+        "z": "871241e86895e73b",
+        "name": "Load",
         "props": [
             {
                 "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
             }
         ],
-        "repeat": "600",
+        "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "Nr01/-25.889709Lat/32.551495Lon/50.50BPM/200AREA/50DIS/ERROSem Comunicacao/Mapa{ \"name\":\"Miraldo\", \"lat\":-25.889709, \"lon\":32.551495, \"command\":{\"panit\":true}}",
+        "payload": "50",
         "payloadType": "str",
-        "x": 100,
-        "y": 280,
+        "x": 90,
+        "y": 400,
         "wires": [
             [
-                "cb1229cb7bf2714b"
+                "f76c01f28d1cbf01",
+                "54bb2c6cbef263df"
             ]
         ]
     },
     {
-        "id": "cb1229cb7bf2714b",
-        "type": "split",
-        "z": "a12aa790e2d52da7",
+        "id": "f76c01f28d1cbf01",
+        "type": "function",
+        "z": "871241e86895e73b",
+        "name": "alcom",
+        "func": "return {payload : msg.payload.d.alcom};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 360,
+        "wires": [
+            [
+                "5e0f1968320bdf1c"
+            ]
+        ]
+    },
+    {
+        "id": "5e0f1968320bdf1c",
+        "type": "switch",
+        "z": "871241e86895e73b",
+        "name": "out",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "number",
+                "vt": "number"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 510,
+        "y": 360,
+        "wires": [
+            [
+                "cf5930af1e46dac4"
+            ]
+        ]
+    },
+    {
+        "id": "54bb2c6cbef263df",
+        "type": "interval-length",
+        "z": "871241e86895e73b",
+        "format": "mills",
+        "bytopic": false,
+        "minimum": "",
+        "maximum": "",
+        "window": "",
+        "timeout": false,
+        "msgTimeout": "10000",
+        "minimumunit": "msecs",
+        "maximumunit": "msecs",
+        "windowunit": "msecs",
+        "msgTimeoutUnit": "msecs",
+        "reset": false,
+        "startup": false,
+        "msgField": "payload",
+        "timestampField": "timestamp",
+        "repeatTimeout": false,
         "name": "",
-        "splt": "/",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "",
-        "x": 310,
-        "y": 280,
+        "x": 350,
+        "y": 440,
         "wires": [
+            [],
             [
-                "4747d931c7f6bb75",
-                "afa2e1161ff6d526",
-                "03b4ef24b36a74e6",
-                "11cf0d0ea429dba2",
-                "7a9ad11debea21fa",
-                "3640a010590b0939",
-                "a4a10b8659616789",
-                "ddaab6aa8e1d063a"
+                "baaae8eb5b42ca57"
             ]
         ]
     },
     {
-        "id": "4747d931c7f6bb75",
-        "type": "switch",
-        "z": "a12aa790e2d52da7",
-        "name": "Filtro_1",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "cont",
-                "v": "Lat",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 540,
-        "y": 60,
-        "wires": [
-            [
-                "f3ad94402ed6e0c3"
-            ]
-        ]
-    },
-    {
-        "id": "afa2e1161ff6d526",
-        "type": "switch",
-        "z": "a12aa790e2d52da7",
-        "name": "Filtro_2",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "cont",
-                "v": "Lon",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 540,
-        "y": 120,
-        "wires": [
-            [
-                "1236e515cbd11d67"
-            ]
-        ]
-    },
-    {
-        "id": "03b4ef24b36a74e6",
-        "type": "switch",
-        "z": "a12aa790e2d52da7",
-        "name": "Filtro_3",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "cont",
-                "v": "BPM",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 540,
-        "y": 180,
-        "wires": [
-            [
-                "58768f863f4459d0"
-            ]
-        ]
-    },
-    {
-        "id": "f3ad94402ed6e0c3",
-        "type": "split",
-        "z": "a12aa790e2d52da7",
-        "name": "Latitude_out",
-        "splt": "Lat",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "",
-        "x": 690,
-        "y": 60,
-        "wires": [
-            [
-                "77585c9091d39a5e"
-            ]
-        ]
-    },
-    {
-        "id": "77585c9091d39a5e",
-        "type": "switch",
-        "z": "a12aa790e2d52da7",
-        "name": "out_lat",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "nempty"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 850,
-        "y": 60,
-        "wires": [
-            [
-                "b883a12c070bc81c"
-            ]
-        ]
-    },
-    {
-        "id": "b883a12c070bc81c",
-        "type": "ui_text",
-        "z": "a12aa790e2d52da7",
-        "group": "fa449e43a0d5d011",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Latitude: ",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "x": 1020,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "1236e515cbd11d67",
-        "type": "split",
-        "z": "a12aa790e2d52da7",
-        "name": "Longitude_out",
-        "splt": "Lon",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "",
-        "x": 700,
-        "y": 120,
-        "wires": [
-            [
-                "cc3a472245b38779"
-            ]
-        ]
-    },
-    {
-        "id": "58768f863f4459d0",
-        "type": "split",
-        "z": "a12aa790e2d52da7",
-        "name": "BPM_out",
-        "splt": "BPM",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "",
-        "x": 680,
-        "y": 180,
-        "wires": [
-            [
-                "6fc5be4a02f1bbf1"
-            ]
-        ]
-    },
-    {
-        "id": "cc3a472245b38779",
-        "type": "switch",
-        "z": "a12aa790e2d52da7",
-        "name": "out_lon",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "nempty"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 860,
-        "y": 120,
-        "wires": [
-            [
-                "cfd34bfff0df76b8"
-            ]
-        ]
-    },
-    {
-        "id": "6fc5be4a02f1bbf1",
-        "type": "switch",
-        "z": "a12aa790e2d52da7",
-        "name": "BPM_out",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "nempty"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 860,
-        "y": 180,
-        "wires": [
-            [
-                "305e53a9d5f45294",
-                "1f6fdfcb1a16cf55"
-            ]
-        ]
-    },
-    {
-        "id": "cfd34bfff0df76b8",
-        "type": "ui_text",
-        "z": "a12aa790e2d52da7",
-        "group": "fa449e43a0d5d011",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Longitude: ",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "x": 1030,
-        "y": 120,
-        "wires": []
-    },
-    {
-        "id": "305e53a9d5f45294",
-        "type": "ui_text",
-        "z": "a12aa790e2d52da7",
-        "group": "762347e8a8927422",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "BPM: ",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "x": 1010,
-        "y": 180,
-        "wires": []
-    },
-    {
-        "id": "1f6fdfcb1a16cf55",
-        "type": "ui_chart",
-        "z": "a12aa790e2d52da7",
-        "name": "",
-        "group": "762347e8a8927422",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "label": "",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "x": 1190,
-        "y": 180,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5004e5c6780fa84b",
-        "type": "worldmap",
-        "z": "a12aa790e2d52da7",
-        "name": "Mapa",
-        "lat": "",
-        "lon": "",
-        "zoom": "17",
-        "layer": "Esri Satellite",
-        "cluster": "",
-        "maxage": "",
-        "usermenu": "show",
-        "layers": "show",
-        "panit": "false",
-        "panlock": "false",
-        "zoomlock": "false",
-        "hiderightclick": "false",
-        "coords": "dms",
-        "showgrid": "true",
-        "allowFileDrop": "true",
-        "path": "/map",
-        "x": 1190,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "11cf0d0ea429dba2",
-        "type": "switch",
-        "z": "a12aa790e2d52da7",
-        "name": "Filtro_4",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "cont",
-                "v": "Mapa",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 540,
-        "y": 240,
-        "wires": [
-            [
-                "6c47dc4315c11bf9"
-            ]
-        ]
-    },
-    {
-        "id": "6c47dc4315c11bf9",
-        "type": "split",
-        "z": "a12aa790e2d52da7",
-        "name": "Mapa_out",
-        "splt": "Mapa",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "",
-        "x": 680,
-        "y": 240,
-        "wires": [
-            [
-                "149d01fb0bb214b0"
-            ]
-        ]
-    },
-    {
-        "id": "149d01fb0bb214b0",
-        "type": "switch",
-        "z": "a12aa790e2d52da7",
-        "name": "Map_out",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "nempty"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 860,
-        "y": 240,
-        "wires": [
-            [
-                "1f90e08076169369"
-            ]
-        ]
-    },
-    {
-        "id": "051c38a753c3c1d0",
+        "id": "24c29a7a21b48819",
         "type": "debug",
-        "z": "a12aa790e2d52da7",
+        "z": "871241e86895e73b",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -591,394 +122,272 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1210,
-        "y": 240,
+        "x": 750,
+        "y": 440,
         "wires": []
     },
     {
-        "id": "8c1424e404863b7a",
-        "type": "ui_iframe",
-        "z": "a12aa790e2d52da7",
-        "group": "fa449e43a0d5d011",
-        "name": "Mapa",
-        "order": 6,
-        "width": "6",
-        "height": "4",
-        "url": "http://127.0.0.1:1880/map/",
-        "origin": "*",
-        "scale": 100,
-        "x": 1370,
-        "y": 300,
+        "id": "baaae8eb5b42ca57",
+        "type": "function",
+        "z": "871241e86895e73b",
+        "name": "out_time comm",
+        "func": "var out_time= \"Sem comunicacao com a base.\";\nreturn { payload : out_time};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 440,
         "wires": [
-            []
+            [
+                "24c29a7a21b48819"
+            ]
         ]
     },
     {
-        "id": "1f90e08076169369",
-        "type": "json",
-        "z": "a12aa790e2d52da7",
+        "id": "5bc1dd824d56bc27",
+        "type": "function",
+        "z": "871241e86895e73b",
+        "name": "Alerta: BPM_out",
+        "func": "var dado = msg.payload;\nvar mensagem = \"Batimentos cardiacos nao detectados\";\n\nif (dado == '0')\n{\n return {payload : mensagem};   \n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 140,
+        "wires": [
+            [
+                "9ae7636416542063"
+            ]
+        ]
+    },
+    {
+        "id": "9ae7636416542063",
+        "type": "debug",
+        "z": "871241e86895e73b",
         "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 1010,
-        "y": 240,
-        "wires": [
-            [
-                "051c38a753c3c1d0",
-                "5004e5c6780fa84b"
-            ]
-        ]
-    },
-    {
-        "id": "7a9ad11debea21fa",
-        "type": "switch",
-        "z": "a12aa790e2d52da7",
-        "name": "Filtro_5",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "cont",
-                "v": "AREA",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 540,
-        "y": 300,
-        "wires": [
-            [
-                "1d2026df43d2b1d5"
-            ]
-        ]
-    },
-    {
-        "id": "3640a010590b0939",
-        "type": "switch",
-        "z": "a12aa790e2d52da7",
-        "name": "Filtro_6",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "cont",
-                "v": "DIS",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 540,
-        "y": 360,
-        "wires": [
-            [
-                "8a9677ef9a316702"
-            ]
-        ]
-    },
-    {
-        "id": "a4a10b8659616789",
-        "type": "switch",
-        "z": "a12aa790e2d52da7",
-        "name": "Filtro_7",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "cont",
-                "v": "ERRO",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 540,
-        "y": 420,
-        "wires": [
-            [
-                "efa0229113123407"
-            ]
-        ]
-    },
-    {
-        "id": "1d2026df43d2b1d5",
-        "type": "split",
-        "z": "a12aa790e2d52da7",
-        "name": "Area_out",
-        "splt": "AREA",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "",
-        "x": 680,
-        "y": 300,
-        "wires": [
-            [
-                "6eff78c10fc9fd5a"
-            ]
-        ]
-    },
-    {
-        "id": "8a9677ef9a316702",
-        "type": "split",
-        "z": "a12aa790e2d52da7",
-        "name": "Distance_out",
-        "splt": "DIS",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "",
-        "x": 690,
-        "y": 360,
-        "wires": [
-            [
-                "6f5278f31732d7ae"
-            ]
-        ]
-    },
-    {
-        "id": "efa0229113123407",
-        "type": "split",
-        "z": "a12aa790e2d52da7",
-        "name": "Erro_out",
-        "splt": "ERRO",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "",
-        "x": 680,
-        "y": 420,
-        "wires": [
-            [
-                "f2502f283fb9d24f"
-            ]
-        ]
-    },
-    {
-        "id": "6eff78c10fc9fd5a",
-        "type": "switch",
-        "z": "a12aa790e2d52da7",
-        "name": "Area_out",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "nempty"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 860,
-        "y": 300,
-        "wires": [
-            [
-                "060dc9fea5c51133"
-            ]
-        ]
-    },
-    {
-        "id": "6f5278f31732d7ae",
-        "type": "switch",
-        "z": "a12aa790e2d52da7",
-        "name": "Dis_out",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "nempty"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 860,
-        "y": 360,
-        "wires": [
-            [
-                "ce942dd728ee50a3"
-            ]
-        ]
-    },
-    {
-        "id": "f2502f283fb9d24f",
-        "type": "switch",
-        "z": "a12aa790e2d52da7",
-        "name": "Erros_out",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "nempty"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 860,
-        "y": 420,
-        "wires": [
-            [
-                "1533cde5ad422a78"
-            ]
-        ]
-    },
-    {
-        "id": "060dc9fea5c51133",
-        "type": "ui_text",
-        "z": "a12aa790e2d52da7",
-        "group": "fa449e43a0d5d011",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Area Fixa: ",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "x": 1030,
-        "y": 300,
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 140,
         "wires": []
     },
     {
-        "id": "ce942dd728ee50a3",
-        "type": "ui_text",
-        "z": "a12aa790e2d52da7",
-        "group": "fa449e43a0d5d011",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Distancia percorrida pelo gado: ",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "x": 1090,
-        "y": 360,
-        "wires": []
-    },
-    {
-        "id": "1533cde5ad422a78",
-        "type": "ui_text",
-        "z": "a12aa790e2d52da7",
-        "group": "8dae227527354ab8",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "x": 1010,
-        "y": 420,
-        "wires": []
-    },
-    {
-        "id": "aa8a718a702bd6f9",
-        "type": "ui_template",
-        "z": "a12aa790e2d52da7",
-        "name": "",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "format": "<div ng-bind-html=\"msg.payload\"></div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "x": 1260,
-        "y": 560,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3848ff2bdbfbf224",
-        "type": "split",
-        "z": "a12aa790e2d52da7",
-        "name": "Nr_gado_out",
-        "splt": "Nr",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "",
-        "x": 690,
-        "y": 480,
+        "id": "71156418340bae02",
+        "type": "inject",
+        "z": "871241e86895e73b",
+        "name": "Entrada: Area",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "200",
+        "payloadType": "num",
+        "x": 130,
+        "y": 60,
         "wires": [
             [
-                "8ccb4c64d231b5db"
+                "4bdeb79c0c51fb46"
             ]
         ]
     },
     {
-        "id": "ddaab6aa8e1d063a",
-        "type": "switch",
-        "z": "a12aa790e2d52da7",
-        "name": "Filtro_8",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
+        "id": "4bdeb79c0c51fb46",
+        "type": "function",
+        "z": "871241e86895e73b",
+        "name": "Flow_Area",
+        "func": "\nvalor = flow.get('area')||msg.payload;\nflow.set('area', valor);\nreturn {payload : valor};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 60,
+        "wires": [
+            [
+                "e73e70c0fedc131c"
+            ]
+        ]
+    },
+    {
+        "id": "e73e70c0fedc131c",
+        "type": "debug",
+        "z": "871241e86895e73b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "90b1e8f18e2f51fd",
+        "type": "function",
+        "z": "871241e86895e73b",
+        "name": "Alerta_Fora_limites",
+        "func": "var Area_total;\nvar Distancia_percorrida;\n\nDistancia_percorrida = msg.payload; \nArea_total = flow.get('area');\n\nif(Distancia_percorrida > Area_total)\n{\n    return {payload : \"Gado fora dos limites determinados\"};\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 200,
+        "wires": [
+            [
+                "7d175c35bd8574e5"
+            ]
+        ]
+    },
+    {
+        "id": "7d287a55d5f42e95",
+        "type": "inject",
+        "z": "871241e86895e73b",
+        "name": "Distancia percorrida",
+        "props": [
             {
-                "t": "cont",
-                "v": "Nr",
+                "p": "payload"
+            },
+            {
+                "p": "topic",
                 "vt": "str"
             }
         ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 540,
-        "y": 480,
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "150",
+        "payloadType": "num",
+        "x": 130,
+        "y": 200,
         "wires": [
             [
-                "3848ff2bdbfbf224"
+                "90b1e8f18e2f51fd",
+                "4d05ab67d5117d8d"
             ]
         ]
     },
     {
-        "id": "8ccb4c64d231b5db",
-        "type": "switch",
-        "z": "a12aa790e2d52da7",
-        "name": "Nr_Gado_out",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
+        "id": "7d175c35bd8574e5",
+        "type": "debug",
+        "z": "871241e86895e73b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "7619c914578d7967",
+        "type": "inject",
+        "z": "871241e86895e73b",
+        "name": "BPM",
+        "props": [
             {
-                "t": "nempty"
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
             }
         ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 880,
-        "y": 480,
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "50.00",
+        "payloadType": "num",
+        "x": 100,
+        "y": 140,
         "wires": [
             [
-                "3a6904a01b0cf45d"
+                "5bc1dd824d56bc27"
             ]
         ]
     },
     {
-        "id": "3a6904a01b0cf45d",
-        "type": "ui_text",
-        "z": "a12aa790e2d52da7",
-        "group": "fa449e43a0d5d011",
-        "order": 1,
-        "width": 0,
-        "height": 0,
+        "id": "4d05ab67d5117d8d",
+        "type": "function",
+        "z": "871241e86895e73b",
+        "name": "Alerta: Aprox_area",
+        "func": "var Area_total;\nvar Distancia_percorrida;\n\nDistancia_percorrida = msg.payload; \nArea_total = flow.get('area');\n\nif(Area_total - Distancia_percorrida <= '100')\n{\n    return {payload : \"Gado proximo dos limites determinados\"};\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 280,
+        "wires": [
+            [
+                "7d175c35bd8574e5"
+            ]
+        ]
+    },
+    {
+        "id": "cf5930af1e46dac4",
+        "type": "function",
+        "z": "871241e86895e73b",
+        "name": "Alerta: Comm_Gado",
+        "func": "var dado = msg.payload;\nvar mensagem = \"Sem comunicacao com o gado\";\n\nif (dado == '0')\n{\n return {payload : mensagem};   \n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 360,
+        "wires": [
+            [
+                "7d3a2b9d1f26c04a"
+            ]
+        ]
+    },
+    {
+        "id": "7d3a2b9d1f26c04a",
+        "type": "debug",
+        "z": "871241e86895e73b",
         "name": "",
-        "label": "Gado Nr: ",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "x": 1060,
-        "y": 480,
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 380,
         "wires": []
     }
 ]
