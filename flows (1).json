@@ -1,0 +1,635 @@
+[
+    {
+        "id": "ee0af859331f14ad",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "b9b9d25ed70902c0",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "74e566a3acdf2b07",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "465834604fd0af19",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "84079f5ba0f59821",
+        "type": "ui_group",
+        "name": "Apresentacao",
+        "tab": "654f468aec23b1a9",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "654f468aec23b1a9",
+        "type": "ui_tab",
+        "name": "Dados",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f85d371971bb3b20",
+        "type": "ui_group",
+        "name": "lista",
+        "tab": "74e566a3acdf2b07",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "538b1cad202c87b2",
+        "type": "ui_group",
+        "name": "Selecao",
+        "tab": "654f468aec23b1a9",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "41ba742d03df049f",
+        "type": "ui_tab",
+        "name": "Rastreador",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d2c313131813a40c",
+        "type": "ui_group",
+        "name": "Localizacao",
+        "tab": "41ba742d03df049f",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a56447c545bff4a7",
+        "type": "ui_group",
+        "name": "Batimentos Cardiacos",
+        "tab": "41ba742d03df049f",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "12ca5777623fc525",
+        "type": "ui_group",
+        "name": "Alertas",
+        "tab": "41ba742d03df049f",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "1fb210a3b6572d35",
+        "type": "ibmiot",
+        "name": "ESP32",
+        "keepalive": "60",
+        "serverName": "",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "b2a97c07f0a506b4",
+        "type": "ibmiot",
+        "name": "Sender",
+        "keepalive": "60",
+        "serverName": "",
+        "cleansession": false,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "f7214504c4b4f79c",
+        "type": "ui_group",
+        "name": "GroupLogout",
+        "tab": "",
+        "order": 4,
+        "disp": false,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "5eb4c6d2723d73af",
+        "type": "ui_group",
+        "name": "Relay 1",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "26169256ab7cd774",
+        "type": "ui_group",
+        "name": "Relay 2",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "3e1fcba79c941d17",
+        "type": "ui_group",
+        "name": "Group1",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "23707209.69454e",
+        "type": "ibmiot",
+        "name": "Sender",
+        "keepalive": "60",
+        "serverName": "",
+        "cleansession": false,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "2e688aa9.af3026",
+        "type": "ui_group",
+        "name": "GroupLogout",
+        "tab": "501c294f.eed1a8",
+        "order": 4,
+        "disp": false,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "e3e479f2.48e4d8",
+        "type": "ui_group",
+        "name": "Relay 1",
+        "tab": "501c294f.eed1a8",
+        "order": 2,
+        "disp": true,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "edd59ec5.63778",
+        "type": "ui_group",
+        "name": "Relay 2",
+        "tab": "501c294f.eed1a8",
+        "order": 3,
+        "disp": true,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "4ce01d0.e7df4e4",
+        "type": "ui_group",
+        "name": "Group1",
+        "tab": "501c294f.eed1a8",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "501c294f.eed1a8",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 4
+    },
+    {
+        "id": "542490858d3619ae",
+        "type": "ui_group",
+        "name": "select",
+        "tab": "654f468aec23b1a9",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "4e0e25d165e70c2f",
+        "type": "ibmiot out",
+        "z": "ee0af859331f14ad",
+        "authentication": "apiKey",
+        "apiKey": "23707209.69454e",
+        "outputType": "cmd",
+        "deviceId": "001",
+        "deviceType": "ESP32",
+        "eventCommandType": "comando",
+        "format": "json",
+        "data": "{\"data\":\"data\"}",
+        "qos": 0,
+        "name": "commandRelay",
+        "service": "registered",
+        "x": 1120,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "93df8279307bb990",
+        "type": "function",
+        "z": "ee0af859331f14ad",
+        "name": "configureCommandTypeR1",
+        "func": "\nmsg.eventOrCommandType = 'commandR1';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 785.7064590454102,
+        "y": 431.627854347229,
+        "wires": [
+            [
+                "4e0e25d165e70c2f",
+                "d31d96ed2f303247"
+            ]
+        ]
+    },
+    {
+        "id": "9c1f81c0bda25a9d",
+        "type": "function",
+        "z": "ee0af859331f14ad",
+        "name": "configureCommandTypeR2",
+        "func": "\nmsg.eventOrCommandType = 'commandR2';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 791.7006912231445,
+        "y": 637.6080341339111,
+        "wires": [
+            [
+                "4e0e25d165e70c2f",
+                "d31d96ed2f303247"
+            ]
+        ]
+    },
+    {
+        "id": "e2703764983e6153",
+        "type": "ui_button",
+        "z": "ee0af859331f14ad",
+        "name": "R1_ON",
+        "group": "538b1cad202c87b2",
+        "order": 1,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "ON",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "{\"value\":1}",
+        "payloadType": "json",
+        "topic": "",
+        "topicType": "str",
+        "x": 136.91674041748047,
+        "y": 367.2500219345093,
+        "wires": [
+            [
+                "93df8279307bb990"
+            ]
+        ]
+    },
+    {
+        "id": "6bbf977b727ed72b",
+        "type": "ui_button",
+        "z": "ee0af859331f14ad",
+        "name": "R2_OFF",
+        "group": "538b1cad202c87b2",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "OFF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "{\"value\":0}",
+        "payloadType": "json",
+        "topic": "",
+        "topicType": "str",
+        "x": 162.50001907348633,
+        "y": 907.2499418258667,
+        "wires": [
+            [
+                "9c1f81c0bda25a9d"
+            ]
+        ]
+    },
+    {
+        "id": "2e5d7edfe7044e93",
+        "type": "ui_button",
+        "z": "ee0af859331f14ad",
+        "name": "R1_OFF",
+        "group": "538b1cad202c87b2",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "OFF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "{\"value\":0}",
+        "payloadType": "json",
+        "topic": "",
+        "topicType": "str",
+        "x": 132.91674041748047,
+        "y": 513.2500219345093,
+        "wires": [
+            [
+                "93df8279307bb990"
+            ]
+        ]
+    },
+    {
+        "id": "374f2c7591ed7910",
+        "type": "ui_button",
+        "z": "ee0af859331f14ad",
+        "name": "R2_ON",
+        "group": "538b1cad202c87b2",
+        "order": 1,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "ON",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "{\"value\":1}",
+        "payloadType": "json",
+        "topic": "",
+        "topicType": "str",
+        "x": 165.50001907348633,
+        "y": 771.2499418258667,
+        "wires": [
+            [
+                "9c1f81c0bda25a9d"
+            ]
+        ]
+    },
+    {
+        "id": "d31d96ed2f303247",
+        "type": "ui_text",
+        "z": "ee0af859331f14ad",
+        "group": "538b1cad202c87b2",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1090,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "e046b69dea925003",
+        "type": "ui_text_input",
+        "z": "ee0af859331f14ad",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "542490858d3619ae",
+        "order": 0,
+        "width": "2",
+        "height": "1",
+        "passthru": true,
+        "mode": "number",
+        "delay": "0",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 240,
+        "wires": [
+            [
+                "f6ba2f6244204040"
+            ]
+        ]
+    },
+    {
+        "id": "f6ba2f6244204040",
+        "type": "function",
+        "z": "ee0af859331f14ad",
+        "name": "",
+        "func": "var gado = \"{&value&:\";\ngado += msg.payload;\ngado += \"}\";\n\nreturn { payload : gado};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 240,
+        "wires": [
+            [
+                "a4c1dd025c3b0e05"
+            ]
+        ]
+    },
+    {
+        "id": "a4c1dd025c3b0e05",
+        "type": "change",
+        "z": "ee0af859331f14ad",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "&",
+                "fromt": "str",
+                "to": "\"",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 610,
+        "y": 240,
+        "wires": [
+            [
+                "9604376302e576a7"
+            ]
+        ]
+    },
+    {
+        "id": "5b3c74edaa27a713",
+        "type": "ui_text",
+        "z": "ee0af859331f14ad",
+        "group": "542490858d3619ae",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1130,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "9604376302e576a7",
+        "type": "function",
+        "z": "ee0af859331f14ad",
+        "name": "configureCommandTypeR1",
+        "func": "\nmsg.eventOrCommandType = 'nrgado';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 240,
+        "wires": [
+            [
+                "5b3c74edaa27a713"
+            ]
+        ]
+    }
+]
