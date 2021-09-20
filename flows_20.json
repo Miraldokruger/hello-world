@@ -1,0 +1,2354 @@
+[
+    {
+        "id": "a12aa790e2d52da7",
+        "type": "tab",
+        "label": "Casa",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "c9d8230df2ac9967",
+        "type": "tab",
+        "label": "Edicao",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "d67e567cd92cdd5c",
+        "type": "ui_tab",
+        "name": "Casa",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ce5362b6dc1d33fe",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#31239f",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Rastreador",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "fa449e43a0d5d011",
+        "type": "ui_group",
+        "name": "Localização ",
+        "tab": "d67e567cd92cdd5c",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "762347e8a8927422",
+        "type": "ui_group",
+        "name": "Batimentos Cardíacos",
+        "tab": "d67e567cd92cdd5c",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "8dae227527354ab8",
+        "type": "ui_group",
+        "name": "Status",
+        "tab": "d67e567cd92cdd5c",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "02392c7719cc009a",
+        "type": "ibmiot",
+        "name": "ESP32",
+        "keepalive": "60",
+        "serverName": "",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "23707209.69454e",
+        "type": "ibmiot",
+        "name": "Sender",
+        "keepalive": "60",
+        "serverName": "",
+        "cleansession": false,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "2e688aa9.af3026",
+        "type": "ui_group",
+        "name": "GroupLogout",
+        "tab": "",
+        "order": 4,
+        "disp": false,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "e3e479f2.48e4d8",
+        "type": "ui_group",
+        "name": "Adicionar",
+        "tab": "5918c3e8ef0a5e9d",
+        "order": 2,
+        "disp": true,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "edd59ec5.63778",
+        "type": "ui_group",
+        "name": "Relay 2",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "4ce01d0.e7df4e4",
+        "type": "ui_group",
+        "name": "Group1",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b9b9d25ed70902c0",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "84079f5ba0f59821",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "5918c3e8ef0a5e9d",
+        "type": "ui_tab",
+        "name": "Edição",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "0a7eacb67f569897",
+        "type": "ui_group",
+        "name": "lista",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "ed94eb696119a215",
+        "type": "ui_group",
+        "name": "Localizacao",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b3a10a09bca2b960",
+        "type": "ui_group",
+        "name": "Batimentos Cardiacos",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a2c188f212f2e332",
+        "type": "ui_group",
+        "name": "Alertas",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "08fdc3b7782a60c7",
+        "type": "ibmiot",
+        "name": "ESP32",
+        "keepalive": "60",
+        "serverName": "",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "80522a28416af59b",
+        "type": "ibmiot",
+        "name": "Sender",
+        "keepalive": "60",
+        "serverName": "",
+        "cleansession": false,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "9aa37d7266bb4f4d",
+        "type": "ui_group",
+        "name": "GroupLogout",
+        "tab": "",
+        "order": 4,
+        "disp": false,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "d9b60689272042de",
+        "type": "ui_group",
+        "name": "Relay 1",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "107f2f3923b89675",
+        "type": "ui_group",
+        "name": "Relay 2",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "b2fc1ac186fd1798",
+        "type": "ui_group",
+        "name": "Group1",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "bdcfb3517358c331",
+        "type": "ui_group",
+        "name": "Remover",
+        "tab": "5918c3e8ef0a5e9d",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "7951775ff0f1ea94",
+        "type": "ui_group",
+        "name": "Status",
+        "tab": "5918c3e8ef0a5e9d",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "5f26eab8250910be",
+        "type": "ibmiot in",
+        "z": "a12aa790e2d52da7",
+        "authentication": "apiKey",
+        "apiKey": "02392c7719cc009a",
+        "inputType": "evt",
+        "logicalInterface": "",
+        "ruleId": "",
+        "deviceId": "",
+        "applicationId": "",
+        "deviceType": "+",
+        "eventType": "+",
+        "commandType": "",
+        "format": "",
+        "name": "IBM IoT",
+        "service": "registered",
+        "allDevices": "",
+        "allApplications": "",
+        "allDeviceTypes": true,
+        "allLogicalInterfaces": "",
+        "allEvents": true,
+        "allCommands": "",
+        "allFormats": true,
+        "qos": "2",
+        "x": 50,
+        "y": 380,
+        "wires": [
+            [
+                "00c5a17b55fe02a8",
+                "16f23740cab3e599",
+                "858216a1df14fa97",
+                "754ed90009917929",
+                "3ee0eed1a6e58c36",
+                "ec11ebdf05c14f4e",
+                "ce0deeca238a6630",
+                "8ec2a76e751d37a3"
+            ]
+        ]
+    },
+    {
+        "id": "00c5a17b55fe02a8",
+        "type": "function",
+        "z": "a12aa790e2d52da7",
+        "name": "Lat",
+        "func": "return {payload : msg.payload.d.Lat};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 260,
+        "wires": [
+            [
+                "504de1a2b24e9c04"
+            ]
+        ]
+    },
+    {
+        "id": "504de1a2b24e9c04",
+        "type": "switch",
+        "z": "a12aa790e2d52da7",
+        "name": "Saida: Latitude",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "number",
+                "vt": "number"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 480,
+        "y": 260,
+        "wires": [
+            [
+                "b883a12c070bc81c",
+                "19881af3b8d97d05"
+            ]
+        ]
+    },
+    {
+        "id": "16f23740cab3e599",
+        "type": "function",
+        "z": "a12aa790e2d52da7",
+        "name": "Lon",
+        "func": "return {payload : msg.payload.d.Lon};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 340,
+        "wires": [
+            [
+                "04060c7d3371ee4c"
+            ]
+        ]
+    },
+    {
+        "id": "04060c7d3371ee4c",
+        "type": "switch",
+        "z": "a12aa790e2d52da7",
+        "name": "Saida: Longitude",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "number",
+                "vt": "number"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 340,
+        "wires": [
+            [
+                "cfd34bfff0df76b8",
+                "a432a9f30c586a14"
+            ]
+        ]
+    },
+    {
+        "id": "858216a1df14fa97",
+        "type": "function",
+        "z": "a12aa790e2d52da7",
+        "name": "Dis",
+        "func": "return {payload : msg.payload.d.Dis};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 420,
+        "wires": [
+            [
+                "eb013a3dbd468f3e"
+            ]
+        ]
+    },
+    {
+        "id": "eb013a3dbd468f3e",
+        "type": "switch",
+        "z": "a12aa790e2d52da7",
+        "name": "Saida: Distancia per_gado",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "number",
+                "vt": "number"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 520,
+        "y": 420,
+        "wires": [
+            [
+                "ce942dd728ee50a3",
+                "82276901830867bd",
+                "291dd6a35edc1060"
+            ]
+        ]
+    },
+    {
+        "id": "754ed90009917929",
+        "type": "function",
+        "z": "a12aa790e2d52da7",
+        "name": "Area",
+        "func": "return {payload : msg.payload.d.Area};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 580,
+        "wires": [
+            [
+                "88bfa1a7ee4ff239"
+            ]
+        ]
+    },
+    {
+        "id": "88bfa1a7ee4ff239",
+        "type": "switch",
+        "z": "a12aa790e2d52da7",
+        "name": "Saida: Area de cobertura",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "number",
+                "vt": "number"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 510,
+        "y": 580,
+        "wires": [
+            [
+                "060dc9fea5c51133",
+                "dd6a151314e39d2f"
+            ]
+        ]
+    },
+    {
+        "id": "3ee0eed1a6e58c36",
+        "type": "function",
+        "z": "a12aa790e2d52da7",
+        "name": "BPM",
+        "func": "return {payload : msg.payload.d.BPM};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 500,
+        "wires": [
+            [
+                "45238e9f972adacc"
+            ]
+        ]
+    },
+    {
+        "id": "45238e9f972adacc",
+        "type": "switch",
+        "z": "a12aa790e2d52da7",
+        "name": "Saida: BPM",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "number",
+                "vt": "number"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 480,
+        "y": 500,
+        "wires": [
+            [
+                "305e53a9d5f45294",
+                "1f6fdfcb1a16cf55",
+                "4056435321c230b4"
+            ]
+        ]
+    },
+    {
+        "id": "b883a12c070bc81c",
+        "type": "ui_text",
+        "z": "a12aa790e2d52da7",
+        "group": "fa449e43a0d5d011",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Latitude: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 720,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "cfd34bfff0df76b8",
+        "type": "ui_text",
+        "z": "a12aa790e2d52da7",
+        "group": "fa449e43a0d5d011",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Longitude: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 730,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "305e53a9d5f45294",
+        "type": "ui_text",
+        "z": "a12aa790e2d52da7",
+        "group": "762347e8a8927422",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "BPM: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 710,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "1f6fdfcb1a16cf55",
+        "type": "ui_chart",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "group": "762347e8a8927422",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "60",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "1",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 870,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5004e5c6780fa84b",
+        "type": "worldmap",
+        "z": "a12aa790e2d52da7",
+        "name": "Mapa",
+        "lat": "",
+        "lon": "",
+        "zoom": "17",
+        "layer": "Esri Satellite",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "show",
+        "panit": "true",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "false",
+        "coords": "dms",
+        "showgrid": "true",
+        "allowFileDrop": "true",
+        "path": "/map",
+        "x": 1350,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "8c1424e404863b7a",
+        "type": "ui_iframe",
+        "z": "a12aa790e2d52da7",
+        "group": "fa449e43a0d5d011",
+        "name": "Mapa",
+        "order": 6,
+        "width": "6",
+        "height": "4",
+        "url": "http://127.0.0.1:1880/map/",
+        "origin": "*",
+        "scale": 100,
+        "x": 810,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1f90e08076169369",
+        "type": "json",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1170,
+        "y": 1000,
+        "wires": [
+            [
+                "5004e5c6780fa84b",
+                "6e1944d8ecda98d4"
+            ]
+        ]
+    },
+    {
+        "id": "060dc9fea5c51133",
+        "type": "ui_text",
+        "z": "a12aa790e2d52da7",
+        "group": "fa449e43a0d5d011",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Área Fixa: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 720,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "ce942dd728ee50a3",
+        "type": "ui_text",
+        "z": "a12aa790e2d52da7",
+        "group": "fa449e43a0d5d011",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Distância percorrida pelo gado: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 790,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "b61984673299b72a",
+        "type": "function",
+        "z": "a12aa790e2d52da7",
+        "name": "Lat + Lon",
+        "func": "var red;\nvar red2;\nvar out;\n\nred = flow.get('latitude');\nred2 = flow.get('longitude');\n\n\n\n\n\nout = \"{ &name&: &Gado&, &lat&:\";\nout += red;\nout += \", &lon&:\";\nout += red2;\nout += \", &command&:{&panit&:true}}\";\n\nreturn {payload : out};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 1000,
+        "wires": [
+            [
+                "256d236f01d3fc15"
+            ]
+        ]
+    },
+    {
+        "id": "f2f04a75d393b27b",
+        "type": "function",
+        "z": "a12aa790e2d52da7",
+        "name": "latitude",
+        "func": "\nvalor = flow.get('latitude')||msg.payload;\nflow.set('latitude', valor);\nreturn {payload : valor};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 840,
+        "wires": [
+            [
+                "f17456beafd91f1b"
+            ]
+        ]
+    },
+    {
+        "id": "f17456beafd91f1b",
+        "type": "debug",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "460e039e6e4bd1f4",
+        "type": "function",
+        "z": "a12aa790e2d52da7",
+        "name": "longitude",
+        "func": "\nvalor = flow.get('longitude')||msg.payload;\nflow.set('longitude', valor);\nreturn {payload : valor};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 920,
+        "wires": [
+            [
+                "3b2b239cc3a008a3",
+                "b61984673299b72a"
+            ]
+        ]
+    },
+    {
+        "id": "3b2b239cc3a008a3",
+        "type": "debug",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "19881af3b8d97d05",
+        "type": "link out",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "links": [
+            "b0c907f99fd8a2b5"
+        ],
+        "x": 855,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "a432a9f30c586a14",
+        "type": "link out",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "links": [
+            "d536c1b570f5954f"
+        ],
+        "x": 855,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "b0c907f99fd8a2b5",
+        "type": "link in",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "links": [
+            "19881af3b8d97d05"
+        ],
+        "x": 215,
+        "y": 840,
+        "wires": [
+            [
+                "f2f04a75d393b27b"
+            ]
+        ]
+    },
+    {
+        "id": "d536c1b570f5954f",
+        "type": "link in",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "links": [
+            "a432a9f30c586a14"
+        ],
+        "x": 215,
+        "y": 920,
+        "wires": [
+            [
+                "460e039e6e4bd1f4"
+            ]
+        ]
+    },
+    {
+        "id": "256d236f01d3fc15",
+        "type": "change",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "&",
+                "fromt": "str",
+                "to": "\"",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 1000,
+        "wires": [
+            [
+                "229a89464a4e7499"
+            ]
+        ]
+    },
+    {
+        "id": "229a89464a4e7499",
+        "type": "switch",
+        "z": "a12aa790e2d52da7",
+        "name": "Filtro de zeros",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 920,
+        "y": 1000,
+        "wires": [
+            [
+                "1f90e08076169369",
+                "a0c3d501ea4591db"
+            ]
+        ]
+    },
+    {
+        "id": "a0c3d501ea4591db",
+        "type": "debug",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1150,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "4056435321c230b4",
+        "type": "function",
+        "z": "a12aa790e2d52da7",
+        "name": "Alerta: BPM_out",
+        "func": "var dado = msg.payload;\nvar mensagem = \"Batimentos cardíacos não detetados\";\n\n\n\nif (dado == '0')\n{\n return {payload : mensagem};   \n}else{\n    return{payload : \"Batimentos cardíacos detetados\"};\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 500,
+        "wires": [
+            [
+                "fb9a53e4c007e9b2",
+                "6bed406bf2cca573"
+            ]
+        ]
+    },
+    {
+        "id": "dd6a151314e39d2f",
+        "type": "function",
+        "z": "a12aa790e2d52da7",
+        "name": "Flow_Area",
+        "func": "\nvalor = flow.get('area')||msg.payload;\nflow.set('area', valor);\nreturn {payload : valor};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 580,
+        "wires": [
+            [
+                "c4c37b8ad16db65d"
+            ]
+        ]
+    },
+    {
+        "id": "c4c37b8ad16db65d",
+        "type": "debug",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1110,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "291dd6a35edc1060",
+        "type": "function",
+        "z": "a12aa790e2d52da7",
+        "name": "Alerta_Fora_limites",
+        "func": "var Area_total;\nvar Distancia_percorrida;\n\nDistancia_percorrida = msg.payload; \nArea_total = flow.get('area');\n\n\n\nif(Distancia_percorrida > Area_total)\n{\n    return {payload : \"Gado fora dos limites determinados\"};\n}else{\n    return{payload : \"Gado dentro dos limites determinados\"};\n}\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 420,
+        "wires": [
+            [
+                "7f9619cb0bd98433",
+                "5ae27a0451d905d8"
+            ]
+        ]
+    },
+    {
+        "id": "82276901830867bd",
+        "type": "function",
+        "z": "a12aa790e2d52da7",
+        "name": "Alerta: Aprox_area",
+        "func": "var Area_total;\nvar Distancia_percorrida;\n\nDistancia_percorrida = msg.payload; \nArea_total = flow.get('area');\n\n\n\nif(Area_total - Distancia_percorrida <= '100')\n{\n    return {payload : \"Gado próximo dos limites determinados\"};\n}else {\n    return{payload : \"Gado dentro dos limites determinados\"};\n}\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 340,
+        "wires": [
+            [
+                "d7c0bf11583e33c7",
+                "afa93b2b740f498e"
+            ]
+        ]
+    },
+    {
+        "id": "ec11ebdf05c14f4e",
+        "type": "function",
+        "z": "a12aa790e2d52da7",
+        "name": "alcom",
+        "func": "return {payload : msg.payload.d.alcom};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 660,
+        "wires": [
+            [
+                "93f0b848df2b5ba7"
+            ]
+        ]
+    },
+    {
+        "id": "93f0b848df2b5ba7",
+        "type": "switch",
+        "z": "a12aa790e2d52da7",
+        "name": "out",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "number",
+                "vt": "number"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 430,
+        "y": 660,
+        "wires": [
+            [
+                "a35cde83154c2189",
+                "0769a1ee6ed717d3",
+                "df054c6ee5dfba35",
+                "ce9354e8631521ce"
+            ]
+        ]
+    },
+    {
+        "id": "bad27cf9b57a17a5",
+        "type": "function",
+        "z": "a12aa790e2d52da7",
+        "name": "out_time comm (OutTime)",
+        "func": "\n\nif(msg.payload >= '30000' ){\n\nreturn { payload : \"Sem comunicação com a base.\"};\n}else{\n\n    return {payload : \"Comunicação estável com a base\"};\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 740,
+        "wires": [
+            [
+                "0d8254300f579b36",
+                "348c4e33efcc5cad"
+            ]
+        ]
+    },
+    {
+        "id": "a35cde83154c2189",
+        "type": "function",
+        "z": "a12aa790e2d52da7",
+        "name": "Alerta: Comm_Gado",
+        "func": "var dado = msg.payload;\nvar mensagem = \"Sem comunicação com o gado\";\n\nif (dado == '0')\n{\n return {payload : mensagem};   \n}else{\n    return {payload : \"Comunicação estável\"};\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 660,
+        "wires": [
+            [
+                "659ea191afa244a0",
+                "731abf681c9e5463"
+            ]
+        ]
+    },
+    {
+        "id": "ce0deeca238a6630",
+        "type": "interval-length",
+        "z": "a12aa790e2d52da7",
+        "format": "mills",
+        "bytopic": false,
+        "minimum": "",
+        "maximum": "",
+        "window": "",
+        "timeout": false,
+        "msgTimeout": "40000",
+        "minimumunit": "msecs",
+        "maximumunit": "msecs",
+        "windowunit": "msecs",
+        "msgTimeoutUnit": "msecs",
+        "reset": false,
+        "startup": false,
+        "msgField": "payload",
+        "timestampField": "timestamp",
+        "repeatTimeout": false,
+        "name": "",
+        "x": 270,
+        "y": 740,
+        "wires": [
+            [
+                "bad27cf9b57a17a5"
+            ],
+            [
+                "bad27cf9b57a17a5",
+                "8cb9bb4b253917cc"
+            ]
+        ]
+    },
+    {
+        "id": "d7c0bf11583e33c7",
+        "type": "ui_text",
+        "z": "a12aa790e2d52da7",
+        "group": "8dae227527354ab8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Alerta: Aproximacao da area exterior",
+        "label": "Nível de distanciamento:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 1490,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "7f9619cb0bd98433",
+        "type": "ui_text",
+        "z": "a12aa790e2d52da7",
+        "group": "8dae227527354ab8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Alerta: Fora dos limites",
+        "label": "Limites de área: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 1440,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "fb9a53e4c007e9b2",
+        "type": "ui_text",
+        "z": "a12aa790e2d52da7",
+        "group": "8dae227527354ab8",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Alerta: Sem batimentos",
+        "label": "Existência de batimentos:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 1450,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "659ea191afa244a0",
+        "type": "ui_text",
+        "z": "a12aa790e2d52da7",
+        "group": "8dae227527354ab8",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Alerta: Sem comunicacao com o gado",
+        "label": "Comunicação com o gado:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 990,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "0d8254300f579b36",
+        "type": "ui_text",
+        "z": "a12aa790e2d52da7",
+        "group": "8dae227527354ab8",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "Sem comunicacao com a central",
+        "label": "Comunicação com a base:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 850,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "8cb9bb4b253917cc",
+        "type": "function",
+        "z": "a12aa790e2d52da7",
+        "name": "Flag",
+        "func": "if(msg.payload >= '30000' ){\n\nreturn { payload : \"---------\"};\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 780,
+        "wires": [
+            [
+                "e22d7bd77ce21021"
+            ]
+        ]
+    },
+    {
+        "id": "e22d7bd77ce21021",
+        "type": "link out",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "links": [
+            "367548b96f9e2d34",
+            "467e2e565b123c94",
+            "aaf29d1898fe7f0e",
+            "a03bdb3c1e757570"
+        ],
+        "x": 595,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "467e2e565b123c94",
+        "type": "link in",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "links": [
+            "e22d7bd77ce21021",
+            "9cbc57536941982a"
+        ],
+        "x": 1275,
+        "y": 440,
+        "wires": [
+            [
+                "7f9619cb0bd98433",
+                "d7c0bf11583e33c7",
+                "fb9a53e4c007e9b2"
+            ]
+        ]
+    },
+    {
+        "id": "367548b96f9e2d34",
+        "type": "link in",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "links": [
+            "e22d7bd77ce21021"
+        ],
+        "x": 765,
+        "y": 700,
+        "wires": [
+            [
+                "659ea191afa244a0"
+            ]
+        ]
+    },
+    {
+        "id": "900bf806eb932d9c",
+        "type": "function",
+        "z": "c9d8230df2ac9967",
+        "name": "Evento: Add",
+        "func": "\nmsg.eventOrCommandType = 'Add';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1510,
+        "y": 380,
+        "wires": [
+            [
+                "d01efe14e9a04347",
+                "54a1d9f0167a1a6d"
+            ]
+        ]
+    },
+    {
+        "id": "a83d854108dc19e4",
+        "type": "function",
+        "z": "c9d8230df2ac9967",
+        "name": "Evento: Remove",
+        "func": "\nmsg.eventOrCommandType = 'Remove';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 460,
+        "wires": [
+            [
+                "f920afcc66831cd0",
+                "54a1d9f0167a1a6d"
+            ]
+        ]
+    },
+    {
+        "id": "ffe16a6825b2ed8e",
+        "type": "ui_text_input",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "label": "Nr do Gado:",
+        "tooltip": "",
+        "group": "fa449e43a0d5d011",
+        "order": 1,
+        "width": "2",
+        "height": "1",
+        "passthru": true,
+        "mode": "number",
+        "delay": "0",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 250,
+        "y": 80,
+        "wires": [
+            [
+                "12a5de06eb3d6a50"
+            ]
+        ]
+    },
+    {
+        "id": "12a5de06eb3d6a50",
+        "type": "function",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "func": "var gado = \"{&value&:\";\ngado += msg.payload;\ngado += \"}\";\n\nreturn { payload : gado};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 80,
+        "wires": [
+            [
+                "9c1b4c7a483106d3"
+            ]
+        ]
+    },
+    {
+        "id": "9c1b4c7a483106d3",
+        "type": "change",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "&",
+                "fromt": "str",
+                "to": "\"",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 710,
+        "y": 80,
+        "wires": [
+            [
+                "2b1e5250f0b894fc"
+            ]
+        ]
+    },
+    {
+        "id": "2b1e5250f0b894fc",
+        "type": "function",
+        "z": "a12aa790e2d52da7",
+        "name": "Evento: NRgado",
+        "func": "\nmsg.eventOrCommandType = 'NRgado';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 80,
+        "wires": [
+            [
+                "f9d7cd46748f4c50",
+                "07ed536c39e810df",
+                "ef6a7230ac5b92d9"
+            ]
+        ]
+    },
+    {
+        "id": "f9d7cd46748f4c50",
+        "type": "debug",
+        "z": "a12aa790e2d52da7",
+        "name": "Saida para Mestre",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1320,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "07ed536c39e810df",
+        "type": "ibmiot out",
+        "z": "a12aa790e2d52da7",
+        "authentication": "apiKey",
+        "apiKey": "02392c7719cc009a",
+        "outputType": "cmd",
+        "deviceId": "Go",
+        "deviceType": "01",
+        "eventCommandType": "comando",
+        "format": "json",
+        "data": "{\"data\":\"data\"}",
+        "qos": 0,
+        "name": "IBM IoT",
+        "service": "registered",
+        "x": 1300,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "c8be99ccc1a4014a",
+        "type": "function",
+        "z": "c9d8230df2ac9967",
+        "name": "",
+        "func": "var gado = \"{&value&:\";\ngado += msg.payload;\ngado += \"}\";\n\nreturn { payload : gado};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 380,
+        "wires": [
+            [
+                "e7f606292cfc5c90"
+            ]
+        ]
+    },
+    {
+        "id": "e7f606292cfc5c90",
+        "type": "change",
+        "z": "c9d8230df2ac9967",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "&",
+                "fromt": "str",
+                "to": "\"",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1260,
+        "y": 380,
+        "wires": [
+            [
+                "900bf806eb932d9c"
+            ]
+        ]
+    },
+    {
+        "id": "d01efe14e9a04347",
+        "type": "debug",
+        "z": "c9d8230df2ac9967",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1370,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "4db4b3391f9bfedf",
+        "type": "ui_form",
+        "z": "c9d8230df2ac9967",
+        "name": "",
+        "label": "Subscrever novo gado",
+        "group": "e3e479f2.48e4d8",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "options": [
+            {
+                "label": "ID do gado",
+                "value": " ",
+                "type": "number",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            " ": ""
+        },
+        "payload": "",
+        "submit": "Adicionar",
+        "cancel": "cancelar",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "x": 100,
+        "y": 380,
+        "wires": [
+            [
+                "9db776cc294b2acc"
+            ]
+        ]
+    },
+    {
+        "id": "9db776cc294b2acc",
+        "type": "function",
+        "z": "c9d8230df2ac9967",
+        "name": "",
+        "func": "var myJSON = msg.payload;\nvar str = JSON.stringify(Object.values(myJSON));\nreturn {payload : str};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 380,
+        "wires": [
+            [
+                "4dbbfc090445ec6b"
+            ]
+        ]
+    },
+    {
+        "id": "4dbbfc090445ec6b",
+        "type": "change",
+        "z": "c9d8230df2ac9967",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "[",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 380,
+        "wires": [
+            [
+                "e007c2724628ec36"
+            ]
+        ]
+    },
+    {
+        "id": "e007c2724628ec36",
+        "type": "change",
+        "z": "c9d8230df2ac9967",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "]",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 380,
+        "wires": [
+            [
+                "c8be99ccc1a4014a"
+            ]
+        ]
+    },
+    {
+        "id": "809716a1b17ecbcf",
+        "type": "function",
+        "z": "c9d8230df2ac9967",
+        "name": "",
+        "func": "var gado = \"{&value&:\";\ngado += msg.payload;\ngado += \"}\";\n\nreturn { payload : gado};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 460,
+        "wires": [
+            [
+                "c3851803956754b5"
+            ]
+        ]
+    },
+    {
+        "id": "c3851803956754b5",
+        "type": "change",
+        "z": "c9d8230df2ac9967",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "&",
+                "fromt": "str",
+                "to": "\"",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1240,
+        "y": 460,
+        "wires": [
+            [
+                "a83d854108dc19e4"
+            ]
+        ]
+    },
+    {
+        "id": "5757552db6e3e4d0",
+        "type": "ui_form",
+        "z": "c9d8230df2ac9967",
+        "name": "",
+        "label": "Remover Subscrição",
+        "group": "bdcfb3517358c331",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "options": [
+            {
+                "label": "ID do gado",
+                "value": " ",
+                "type": "number",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            " ": ""
+        },
+        "payload": "",
+        "submit": "Remover",
+        "cancel": "cancelar",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "x": 100,
+        "y": 460,
+        "wires": [
+            [
+                "badf3449c370d33b"
+            ]
+        ]
+    },
+    {
+        "id": "badf3449c370d33b",
+        "type": "function",
+        "z": "c9d8230df2ac9967",
+        "name": "",
+        "func": "var myJSON = msg.payload;\nvar str = JSON.stringify(Object.values(myJSON));\nreturn {payload : str};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 460,
+        "wires": [
+            [
+                "59162cfe3c9467dd"
+            ]
+        ]
+    },
+    {
+        "id": "59162cfe3c9467dd",
+        "type": "change",
+        "z": "c9d8230df2ac9967",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "[",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 460,
+        "wires": [
+            [
+                "4709e3647cec7800"
+            ]
+        ]
+    },
+    {
+        "id": "4709e3647cec7800",
+        "type": "change",
+        "z": "c9d8230df2ac9967",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "]",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 840,
+        "y": 460,
+        "wires": [
+            [
+                "809716a1b17ecbcf"
+            ]
+        ]
+    },
+    {
+        "id": "f920afcc66831cd0",
+        "type": "debug",
+        "z": "c9d8230df2ac9967",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1620,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "ef6a7230ac5b92d9",
+        "type": "link out",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "links": [
+            "416fbe743a499f77"
+        ],
+        "x": 1095,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "416fbe743a499f77",
+        "type": "link in",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "links": [
+            "ef6a7230ac5b92d9"
+        ],
+        "x": 135,
+        "y": 740,
+        "wires": [
+            [
+                "ce0deeca238a6630"
+            ]
+        ]
+    },
+    {
+        "id": "8ec2a76e751d37a3",
+        "type": "function",
+        "z": "a12aa790e2d52da7",
+        "name": "notificacao",
+        "func": "return {payload : msg.payload.d.notificacao};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 180,
+        "wires": [
+            [
+                "e506cf8dd872d5fe"
+            ]
+        ]
+    },
+    {
+        "id": "e506cf8dd872d5fe",
+        "type": "switch",
+        "z": "a12aa790e2d52da7",
+        "name": "Saida: Notificacao (0  ; 1)",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "number",
+                "vt": "number"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 510,
+        "y": 180,
+        "wires": [
+            [
+                "3455aa59b80884c6"
+            ]
+        ]
+    },
+    {
+        "id": "3455aa59b80884c6",
+        "type": "function",
+        "z": "a12aa790e2d52da7",
+        "name": "Mensagem",
+        "func": "var valor = msg.payload;\n\nif (valor == '1')\n    {\n        return {payload : \"Erro: Indique valores iguas ou superiores a 1\"};\n    } \n    \n  if (valor == '2')\n    {\n        return {payload : \"Erro: Gado existente\"};\n    }   \n    \n      if (valor == '3')\n    {\n        return {payload : \"Adicionado com sucesso!\"};\n    }  \n    \n      if (valor == '4')\n    {\n        return {payload : \"Erro: Indique valores iguas ou superiores a 1\"};\n    }  \n    \n      if (valor == '5')\n    {\n        return {payload : \"Erro: O Gado não existe\"};\n    }  \n    \n      if (valor == '6')\n    {\n        return {payload : \"Removido com sucesso!\"};\n    }  \n    \n       if (valor == '7')\n    {\n        return {payload : \"Gado Invalido!\"};\n    } \n    ",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 180,
+        "wires": [
+            [
+                "1f02d6ccb9ab51c2"
+            ]
+        ]
+    },
+    {
+        "id": "1f02d6ccb9ab51c2",
+        "type": "ui_toast",
+        "z": "a12aa790e2d52da7",
+        "position": "top right",
+        "displayTime": "5",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "",
+        "x": 990,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "afa93b2b740f498e",
+        "type": "ui_text",
+        "z": "a12aa790e2d52da7",
+        "d": true,
+        "group": "7951775ff0f1ea94",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Alerta: Aproximacao da area exterior",
+        "label": "Nivel de distanciamento:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 1870,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "5ae27a0451d905d8",
+        "type": "ui_text",
+        "z": "a12aa790e2d52da7",
+        "d": true,
+        "group": "7951775ff0f1ea94",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Alerta: Fora dos limites",
+        "label": "Limites de area: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 1820,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "6bed406bf2cca573",
+        "type": "ui_text",
+        "z": "a12aa790e2d52da7",
+        "d": true,
+        "group": "7951775ff0f1ea94",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Alerta: Sem batimentos",
+        "label": "Existencia de batimentos:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 1830,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "aaf29d1898fe7f0e",
+        "type": "link in",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "links": [
+            "e22d7bd77ce21021",
+            "9cbc57536941982a"
+        ],
+        "x": 1655,
+        "y": 440,
+        "wires": [
+            [
+                "5ae27a0451d905d8",
+                "afa93b2b740f498e",
+                "6bed406bf2cca573"
+            ]
+        ]
+    },
+    {
+        "id": "731abf681c9e5463",
+        "type": "ui_text",
+        "z": "a12aa790e2d52da7",
+        "d": true,
+        "group": "7951775ff0f1ea94",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Alerta: Sem comunicacao com o gado",
+        "label": "Comunicacao com o gado:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 1390,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "348c4e33efcc5cad",
+        "type": "ui_text",
+        "z": "a12aa790e2d52da7",
+        "group": "7951775ff0f1ea94",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "Sem comunicacao com a central",
+        "label": "Comunicação com a base:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 1250,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "a03bdb3c1e757570",
+        "type": "link in",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "links": [
+            "e22d7bd77ce21021"
+        ],
+        "x": 1165,
+        "y": 700,
+        "wires": [
+            [
+                "731abf681c9e5463"
+            ]
+        ]
+    },
+    {
+        "id": "54a1d9f0167a1a6d",
+        "type": "ibmiot out",
+        "z": "c9d8230df2ac9967",
+        "authentication": "apiKey",
+        "apiKey": "02392c7719cc009a",
+        "outputType": "cmd",
+        "deviceId": "Go",
+        "deviceType": "01",
+        "eventCommandType": "comando",
+        "format": "json",
+        "data": "{\"data\":\"data\"}",
+        "qos": 0,
+        "name": "IBM IoT",
+        "service": "registered",
+        "x": 1720,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "0769a1ee6ed717d3",
+        "type": "function",
+        "z": "a12aa790e2d52da7",
+        "name": "Flag",
+        "func": "var dado = msg.payload;\n\n\nif (dado == '0')\n{\n return {payload : \"---------\"};   \n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 700,
+        "wires": [
+            [
+                "9cbc57536941982a"
+            ]
+        ]
+    },
+    {
+        "id": "9cbc57536941982a",
+        "type": "link out",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "links": [
+            "467e2e565b123c94",
+            "aaf29d1898fe7f0e"
+        ],
+        "x": 675,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "df054c6ee5dfba35",
+        "type": "debug",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "217fcd2a52dcc1ec",
+        "type": "link in",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "links": [
+            "ce9354e8631521ce"
+        ],
+        "x": 95,
+        "y": 1080,
+        "wires": [
+            [
+                "b832ce135092788a"
+            ]
+        ]
+    },
+    {
+        "id": "ce9354e8631521ce",
+        "type": "link out",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "links": [
+            "217fcd2a52dcc1ec"
+        ],
+        "x": 535,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "b832ce135092788a",
+        "type": "switch",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 190,
+        "y": 1080,
+        "wires": [
+            [
+                "a86122dbece83bfc"
+            ]
+        ]
+    },
+    {
+        "id": "304f99f13fb75809",
+        "type": "delay",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "x": 490,
+        "y": 1080,
+        "wires": [
+            [
+                "0887c6cecd29f9bb",
+                "256d236f01d3fc15"
+            ]
+        ]
+    },
+    {
+        "id": "0887c6cecd29f9bb",
+        "type": "debug",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "6e1944d8ecda98d4",
+        "type": "debug",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1410,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "a86122dbece83bfc",
+        "type": "function",
+        "z": "a12aa790e2d52da7",
+        "name": "",
+        "func": "var ms;\nms =\"{&name&:&Joe&, &lat&:1.00, &lon&:-1.00}\";\nreturn {payload : ms};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1080,
+        "wires": [
+            [
+                "304f99f13fb75809"
+            ]
+        ]
+    }
+]
